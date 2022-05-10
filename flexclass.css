@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.container div{
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.box1{
+    flex-basis: 20%;
+    order: 1;
+    height: 150px;
+    flex-grow: 1;
+}
+
+.box2{
+    flex-basis: 20%;
+    order: 2;
+    flex-grow: 3;
+}
+
+.box3{
+    flex-basis: 20%;
+    order: 3;
+}

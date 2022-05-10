@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nueva pagina</title>
+    <style>
+         #btn-menu:checked ~ .contenedor{
+            margin-left: 0px;
+         }
+        @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 480px) {
+            .contenedor{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            column-gap: 50px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);   
+            font-size: 30px;
+            margin-left: -100%;
+        }
+        }       
+        @media only screen 
+        and (min-width : 1224px) {
+            .contenedor{
+            align-content:flex-end;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 50px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);   
+            font-size: 30px;
+        }
+        a{
+            border: 1px solid rgba(0, 0, 0, 0.8);
+        }
+        }
+    </style>
+</head>
+<body> 
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src=""></label>
+            <div class="contenedor">
+                    <a href="">Inicio</a>
+                    <a href="">Servicios</a>
+                    <a href="">Productos</a>
+            </div>        
+            <button style="background-color: blue;"></button>
+</body>
+</html>
